@@ -1,0 +1,379 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Montserrat&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+#nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    z-index: 99;
+    left: 50%;
+    transform: translate(-50%);
+    top: 2%;
+    border-radius: 15px;
+    height: 9vh;
+    width: 40vw;
+    background-color: #ffffff81;
+    backdrop-filter: blur(10px);
+    padding: 0px 5px;
+}
+
+#nav>img {
+    width: 20%;
+}
+
+#nav>button {
+    padding: 13px 20px;
+    border-radius: 10px;
+    border: none;
+    background-color: #ffcc6d;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+#nav>button:hover {
+    background-color: #f6e659;
+}
+
+#center-nav>a {
+    text-decoration: none;
+    font-size: 14.7px;
+    color: black;
+    padding-left: 10px;
+}
+
+#center-nav>a:hover {
+    color: #dcd811;
+}
+
+#page {
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    background-color: #E4E0DD;
+}
+
+#page>h1 {
+    font-size: 87px;
+    font-family: 'Abril Fatface';
+    position: absolute;
+    z-index: 50;
+    text-align: center;
+    top: 40%;
+    left: 50%;
+    font-weight: 500;
+    transform: translate(-50%, -50%);
+}
+
+#page>h4 {
+    position: absolute;
+    z-index: 50;
+    text-align: center;
+    top: 65%;
+    left: 50%;
+    font-weight: 500;
+    font-size: 21px;
+    color: rgb(58, 57, 57);
+    transform: translate(-50%, -50%);
+}
+
+canvas {
+    height: 100vh;
+    width: 100vw;
+}
+
+#page1 {
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    background-color: transparent;
+}
+
+#page1>h1 {
+    font-size: 80px;
+    font-family: 'Abril Fatface';
+    position: absolute;
+    z-index: 50;
+    text-align: center;
+    top: 40%;
+    left: 50%;
+    font-weight: 500;
+    transform: translate(-50%, -50%);
+}
+
+#page1>h4 {
+    position: absolute;
+    z-index: 50;
+    text-align: center;
+    top: 60%;
+    left: 50%;
+    font-weight: 400;
+    font-size: 20px;
+    color: rgb(98, 98, 98);
+    transform: translate(-50%, -50%);
+}
+
+#pageM {
+    position: relative;
+    z-index: 9;
+    height: 100vh;
+    width: 100vw;
+    background-color: transparent !important;
+}
+
+#page2 {
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    background-color: transparent;
+}
+
+#page3 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    text-align: center;
+    height: 60vh;
+    width: 100vw;
+    background-color: #E4E0DD;
+}
+
+#page3>h1 {
+    font-weight: 600;
+    font-size: 3vw;
+    margin-bottom: 20px;
+}
+
+#page3>h4 {
+    font-weight: 500;
+    font-size: 1.4vw;
+    color: rgb(98, 98, 98);
+}
+
+#page4 {
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+    background-color: #E4E0DD;
+    background-image: linear-gradient(#E4E0DD 20% , black 95%);
+}
+
+#center-page4 {
+    display: flex;
+    position: relative;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 60%;
+    width: 75%;
+    border-radius: 20px;
+    background-color: rgba(253, 202, 202, 0.748);
+    backdrop-filter: blur(10px);
+}
+
+#page4-left {
+    height: 100%;
+    width: 50%;
+
+}
+
+#page4-right {
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+    height: 100%;
+    width: 35%;
+    gap: 25px;
+    padding-left: 60px;
+
+}
+
+#page4-left>svg {
+    scale: 0.7;
+
+}
+
+#page4-right>h1 {
+    font-weight: 600;
+    font-size: 50px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#page4-right>h4 {
+
+    font-size: 16px;
+    font-weight: 500;
+}
+
+#page4-right>button {
+    font-weight: 500;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 20px;
+    background-color: black;
+    color: white;
+}
+
+#page4-right>button:hover {
+    background-color: rgb(255, 255, 255);
+    color: black;
+}
+
+/* ..................................START OF FOOTER.................................. */
+#footer {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+   background-color:black;
+}
+
+footer {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color: #3586ff;
+    min-height: 100px;
+    padding: 20px 50px;
+}
+footer .social-icons ,.menu {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+    flex-wrap: wrap;
+}
+
+
+.social-icons .fa {
+    width: 40px;
+    height: 70px;
+    text-align: center;
+    line-height:70px;
+    font-size: 2em;
+    color: #fff;
+    margin-right: 15px;
+    cursor:pointer;
+    transition: 0.5s;
+}
+.social-icons .fa:hover{
+  transform: translateY(-10px);
+}
+
+footer .menu li a{
+    text-align: center;
+    font-size: 1.2em;
+    font-weight: 500;
+    color: #fff;
+    margin-right: 15px;
+    cursor:pointer;
+    transition: 0.5s;
+    opacity: 0.5;
+}
+footer .menu li a:hover{
+  opacity: 1;
+}
+hr{
+    width: 90%;
+    border: 0;
+    border-bottom: 1px solid #ccc ;
+    margin: 10px auto;
+    text-align: center;
+}
+
+.copyright{
+    text-align: center;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+footer .wave{
+    position: absolute;
+    top: -100px;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background:url(wave.png);
+    background-size: 1000px 100px;
+}
+
+footer .wave#wave1{
+    z-index: 999;
+    opacity: 1;
+    bottom:0;
+    animation: animateWave 4s linear infinite;
+}
+
+footer .wave#wave2{
+    z-index: 998;
+    opacity: .75;
+    bottom:10px;
+    animation: animateWave_02 4s linear infinite;
+}
+footer .wave#wave3{
+    z-index: 997;
+    opacity: .5;
+    bottom:20px;
+    animation: animateWave_03 3s linear infinite;
+}
+footer .wave#wave4{
+    z-index: 996;
+    opacity: .25;
+    bottom:30px;
+    animation: animateWave_04 3s linear infinite;
+}
+
+@keyframes animateWave{
+    0%{
+        background-position-x: 1000px;
+    }
+    100%{
+        background-position-x: 0px;
+    }
+}
+@keyframes animateWave_02{
+    0%{
+        background-position-x: 0px;
+    }
+    100%{
+        background-position-x: 1000px;
+    }
+}
+@keyframes animateWave_03{
+    0%{
+        background-position-x: 1000px;
+    }
+    100%{
+        background-position-x: 0px;
+    }
+}
+@keyframes animateWave_04{
+    0%{
+        background-position-x: 0px;
+    }
+    100%{
+        background-position-x: 1000px;
+    }
+}
+
+/* ....................................END OF FOOTER................................... */
