@@ -23,8 +23,8 @@ body {
     transform: translate(-50%);
     top: 2%;
     border-radius: 15px;
-    height: 9vh;
-    width: 40vw;
+    height: 9vmin;
+    width: 40vmax;
     background-color: #ffffff81;
     backdrop-filter: blur(10px);
     padding: 0px 5px;
@@ -35,16 +35,21 @@ body {
 }
 
 #nav>button {
-    padding: 13px 20px;
+    padding: 1.7vmin 2vmin;
     border-radius: 10px;
     border: none;
     background-color: #ffcc6d;
     font-weight: 500;
-    font-size: 14px;
+    font-size: 1vw;
 }
 
 #nav>button:hover {
     background-color: #f6e659;
+}
+
+#center-nav{
+    display: flex;
+    justify-content: space-between;
 }
 
 #center-nav>a {
@@ -66,7 +71,8 @@ body {
 }
 
 #page>h1 {
-    font-size: 87px;
+    /* font-size: 87px; */
+    font-size: 12vmin;
     font-family: 'Abril Fatface';
     position: absolute;
     z-index: 50;
@@ -81,10 +87,11 @@ body {
     position: absolute;
     z-index: 50;
     text-align: center;
-    top: 65%;
+    top: 68%;
     left: 50%;
     font-weight: 500;
-    font-size: 21px;
+    /* font-size: 21px; */
+    font-size: 4vmin;
     color: rgb(58, 57, 57);
     transform: translate(-50%, -50%);
 }
@@ -102,7 +109,7 @@ canvas {
 }
 
 #page1>h1 {
-    font-size: 80px;
+    font-size: 12vmin;
     font-family: 'Abril Fatface';
     position: absolute;
     z-index: 50;
@@ -117,10 +124,10 @@ canvas {
     position: absolute;
     z-index: 50;
     text-align: center;
-    top: 60%;
+    top: 66%;
     left: 50%;
     font-weight: 400;
-    font-size: 20px;
+    font-size: 4vmin;
     color: rgb(98, 98, 98);
     transform: translate(-50%, -50%);
 }
@@ -154,13 +161,13 @@ canvas {
 
 #page3>h1 {
     font-weight: 600;
-    font-size: 3vw;
+    font-size: 3vmax;
     margin-bottom: 20px;
 }
 
 #page3>h4 {
     font-weight: 500;
-    font-size: 1.4vw;
+    font-size: 1.4vmax;
     color: rgb(98, 98, 98);
 }
 
@@ -178,8 +185,8 @@ canvas {
     top: 70%;
     left: 50%;
     transform: translate(-50%, -50%);
-    height: 60%;
-    width: 75%;
+    height: 60vh;
+    width: 75vw;
     border-radius: 20px;
     background-color: rgba(253, 202, 202, 0.748);
     backdrop-filter: blur(10px);
@@ -198,9 +205,8 @@ canvas {
     flex-direction: column;
     height: 100%;
     width: 35%;
-    gap: 25px;
-    padding-left: 60px;
-
+    gap: 2vmin;
+    padding-left: 6vmin;
 }
 
 #page4-left>svg {
@@ -210,21 +216,22 @@ canvas {
 
 #page4-right>h1 {
     font-weight: 600;
-    font-size: 50px;
+    font-size: 7vmin;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 #page4-right>h4 {
 
-    font-size: 16px;
+    font-size: 2vmin;
     font-weight: 500;
 }
 
 #page4-right>button {
     font-weight: 500;
+    font-size: 2vmin;
     border: none;
     border-radius: 10px;
-    padding: 10px 20px;
+    padding: 1vmin 2vh;
     background-color: black;
     color: white;
 }
