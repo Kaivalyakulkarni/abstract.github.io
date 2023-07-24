@@ -23,15 +23,18 @@ body {
     transform: translate(-50%);
     top: 2%;
     border-radius: 15px;
-    height: 9vmin;
-    width: 40vmax;
+    height: 9vh;
+    width: 40vw;
     background-color: #ffffff81;
     backdrop-filter: blur(10px);
     padding: 0px 5px;
 }
 
 #nav>img {
-    width: 20%;
+    width: 8vw;
+}
+#nav>i{
+    display: none;
 }
 
 #nav>button {
@@ -178,7 +181,7 @@ canvas {
     background-color: #E4E0DD;
     background-image: linear-gradient(#E4E0DD 20% , black 95%);
 }
-
+ 
 #center-page4 {
     display: flex;
     position: relative;
@@ -296,6 +299,7 @@ footer .menu li a{
     cursor:pointer;
     transition: 0.5s;
     opacity: 0.5;
+    text-decoration: none;
 }
 footer .menu li a:hover{
   opacity: 1;
@@ -384,3 +388,95 @@ footer .wave#wave4{
 }
 
 /* ....................................END OF FOOTER................................... */
+
+
+@media (max-width: 600px) {
+    
+    #nav{
+       padding: 4vw 1vh;
+       height: 6vh;
+       width: 40vh;
+    }
+    #nav>img {
+        width:10.5vh;
+        height: 5.4vw;
+    }
+
+    #nav>i{
+        color:rgb(207, 207, 15);
+        font-size: 5vw;
+        font-weight: 800;
+        display: inline;
+        margin-right: 0.6vh;
+    }
+
+    #page>h1{
+        font-size: 6vh;
+    }
+
+    #center-nav{
+        position: absolute;
+        flex-direction: column;
+        gap: 2vh;
+        top: 0%;
+        right:-100%;
+        z-index: -1;
+        padding: 3vw 2vh ;
+        padding-top: 1.8vh;
+        width: 40vw;
+        background-color: #faf7a8ed;
+        backdrop-filter: blur(10px);
+        border-radius: 1.8vh;
+        justify-content: flex-start;
+        transition: all .5s ease;
+    }
+    #center-nav.open{
+        right: 0%;
+    }
+
+    #nav>button{
+        display: none;
+    }
+
+    #center-page4{
+        height: 30vh;
+        width: 45vh;
+    }
+
+    #page3{
+        height: 35vh;
+    }
+
+    #page4{
+        height: 40vh;
+    }
+    
+    #footer{
+        height:50vh;
+    }
+
+    #menu-icon:hover{
+        color: black;
+    }
+
+    #center-nav>a:hover {
+        color: #7ddc11;
+    }
+
+
+    footer .menu li a{
+        text-align: center;
+        font-size: 1em;
+        font-weight: 500;
+        color: #fff;
+        margin-right: 15px;
+        cursor:pointer;
+        transition: 0.5s;
+        opacity: 0.5;
+        text-decoration: none;
+    }
+
+    .copyright{
+        font-size: 3vw;
+    }
+}
