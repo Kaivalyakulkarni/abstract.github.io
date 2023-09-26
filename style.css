@@ -31,28 +31,20 @@ body {
 }
 
 #nav>img {
-    width: 8vw;
-}
-#nav>i{
-    display: none;
+    width: 20%;
 }
 
 #nav>button {
-    padding: 1.7vmin 2vmin;
+    padding: 13px 20px;
     border-radius: 10px;
     border: none;
     background-color: #ffcc6d;
     font-weight: 500;
-    font-size: 1vw;
+    font-size: 14px;
 }
 
 #nav>button:hover {
     background-color: #f6e659;
-}
-
-#center-nav{
-    display: flex;
-    justify-content: space-between;
 }
 
 #center-nav>a {
@@ -74,8 +66,7 @@ body {
 }
 
 #page>h1 {
-    /* font-size: 87px; */
-    font-size: 12vmin;
+    font-size: 87px;
     font-family: 'Abril Fatface';
     position: absolute;
     z-index: 50;
@@ -90,11 +81,10 @@ body {
     position: absolute;
     z-index: 50;
     text-align: center;
-    top: 68%;
+    top: 65%;
     left: 50%;
     font-weight: 500;
-    /* font-size: 21px; */
-    font-size: 4vmin;
+    font-size: 21px;
     color: rgb(58, 57, 57);
     transform: translate(-50%, -50%);
 }
@@ -112,7 +102,7 @@ canvas {
 }
 
 #page1>h1 {
-    font-size: 12vmin;
+    font-size: 80px;
     font-family: 'Abril Fatface';
     position: absolute;
     z-index: 50;
@@ -127,10 +117,10 @@ canvas {
     position: absolute;
     z-index: 50;
     text-align: center;
-    top: 66%;
+    top: 60%;
     left: 50%;
     font-weight: 400;
-    font-size: 4vmin;
+    font-size: 20px;
     color: rgb(98, 98, 98);
     transform: translate(-50%, -50%);
 }
@@ -164,13 +154,13 @@ canvas {
 
 #page3>h1 {
     font-weight: 600;
-    font-size: 3vmax;
+    font-size: 3vw;
     margin-bottom: 20px;
 }
 
 #page3>h4 {
     font-weight: 500;
-    font-size: 1.4vmax;
+    font-size: 1.4vw;
     color: rgb(98, 98, 98);
 }
 
@@ -181,15 +171,15 @@ canvas {
     background-color: #E4E0DD;
     background-image: linear-gradient(#E4E0DD 20% , black 95%);
 }
- 
+
 #center-page4 {
     display: flex;
     position: relative;
     top: 70%;
     left: 50%;
     transform: translate(-50%, -50%);
-    height: 60vh;
-    width: 75vw;
+    height: 60%;
+    width: 75%;
     border-radius: 20px;
     background-color: rgba(253, 202, 202, 0.748);
     backdrop-filter: blur(10px);
@@ -208,8 +198,9 @@ canvas {
     flex-direction: column;
     height: 100%;
     width: 35%;
-    gap: 2vmin;
-    padding-left: 6vmin;
+    gap: 25px;
+    padding-left: 60px;
+
 }
 
 #page4-left>svg {
@@ -219,22 +210,21 @@ canvas {
 
 #page4-right>h1 {
     font-weight: 600;
-    font-size: 7vmin;
+    font-size: 50px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 #page4-right>h4 {
 
-    font-size: 2vmin;
+    font-size: 16px;
     font-weight: 500;
 }
 
 #page4-right>button {
     font-weight: 500;
-    font-size: 2vmin;
     border: none;
     border-radius: 10px;
-    padding: 1vmin 2vh;
+    padding: 10px 20px;
     background-color: black;
     color: white;
 }
@@ -299,7 +289,6 @@ footer .menu li a{
     cursor:pointer;
     transition: 0.5s;
     opacity: 0.5;
-    text-decoration: none;
 }
 footer .menu li a:hover{
   opacity: 1;
@@ -388,95 +377,3 @@ footer .wave#wave4{
 }
 
 /* ....................................END OF FOOTER................................... */
-
-
-@media (max-width: 600px) {
-    
-    #nav{
-       padding: 4vw 1vh;
-       height: 6vh;
-       width: 40vh;
-    }
-    #nav>img {
-        width:10.5vh;
-        height: 5.4vw;
-    }
-
-    #nav>i{
-        color:rgb(207, 207, 15);
-        font-size: 5vw;
-        font-weight: 800;
-        display: inline;
-        margin-right: 0.6vh;
-    }
-
-    #page>h1{
-        font-size: 6vh;
-    }
-
-    #center-nav{
-        position: absolute;
-        flex-direction: column;
-        gap: 2vh;
-        top: 0%;
-        right:-100%;
-        z-index: -1;
-        padding: 3vw 2vh ;
-        padding-top: 1.8vh;
-        width: 40vw;
-        background-color: #faf7a8ed;
-        backdrop-filter: blur(10px);
-        border-radius: 1.8vh;
-        justify-content: flex-start;
-        transition: all .5s ease;
-    }
-    #center-nav.open{
-        right: 0%;
-    }
-
-    #nav>button{
-        display: none;
-    }
-
-    #center-page4{
-        height: 30vh;
-        width: 45vh;
-    }
-
-    #page3{
-        height: 35vh;
-    }
-
-    #page4{
-        height: 40vh;
-    }
-    
-    #footer{
-        height:50vh;
-    }
-
-    #menu-icon:hover{
-        color: black;
-    }
-
-    #center-nav>a:hover {
-        color: #7ddc11;
-    }
-
-
-    footer .menu li a{
-        text-align: center;
-        font-size: 1em;
-        font-weight: 500;
-        color: #fff;
-        margin-right: 15px;
-        cursor:pointer;
-        transition: 0.5s;
-        opacity: 0.5;
-        text-decoration: none;
-    }
-
-    .copyright{
-        font-size: 3vw;
-    }
-}

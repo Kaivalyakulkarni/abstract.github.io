@@ -242,12 +242,3 @@ stagger:{
 }
 
 });
-
-
-let menu = document.querySelector('#menu-icon');
-let navbar = document.querySelector('#center-nav');
-
-menu.onclick = () => {
-    menu.classList.toggle('ri-close-fill');
-    navbar.classList.toggle('open');
-}
